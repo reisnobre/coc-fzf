@@ -3,7 +3,7 @@ let s:prompt = 'Coc Actions> '
 function! coc_fzf#actions#fzf_run(...) abort
   call coc_fzf#common#log_function_call(expand('<sfile>'), a:000)
   let l:current_buffer_only = a:0 ? a:1 : 0
-  let l:diags = CocAction('diagnosticList')
+  let l:diags = CocAction('actionList')
   if !empty(l:diags)
     let expect_keys = join(keys(get(g:, 'fzf_action', s:default_action)), ',')
     let l:opts = {
