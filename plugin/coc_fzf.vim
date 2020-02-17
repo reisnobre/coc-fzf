@@ -45,6 +45,7 @@ command CocFzfListExtensions   call coc_fzf#extensions#fzf_run()
 command CocFzfListOutline      call coc_fzf#outline#fzf_run()
 command CocFzfListSymbols      call coc_fzf#symbols#fzf_run()
 command CocFzfListServices     call coc_fzf#services#fzf_run()
+command CocFzfListActions      call coc_fzf#actions#fzf_run()
 if g:coc_fzf_location_available
   command CocFzfListLocation   call coc_fzf#location#fzf_run()
 endif
